@@ -33,10 +33,9 @@ export default function Herosection() {
   }, []);
 
   return (
-    <div className={`relative w-full min-h-[90vh] bg-white pt-24 pb-16 flex flex-col items-center justify-center transition-all duration-500 ${
-      scrolled ? "mt-16" : "mt-20"
-    }`}>
-      
+    <div className={`relative w-full min-h-[90vh] bg-white pt-24 pb-16 flex flex-col items-center justify-center transition-all duration-500 ${scrolled ? "mt-16" : "mt-20"
+      }`}>
+
       {/* Enhanced background decorative elements with more vibrant gradients */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
         <div className="absolute top-20 left-10 w-96 h-96 rounded-full bg-gradient-to-br from-[#4552e3]/10 to-[#888feb]/10 blur-3xl" />
@@ -50,70 +49,70 @@ export default function Herosection() {
         <div className="absolute top-20 left-10 w-80 h-80 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
         <div className="absolute top-60 right-10 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
         <div className="absolute -bottom-8 left-20 w-80 h-80 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-        
+
         {/* New floating elements */}
-        <motion.div 
+        <motion.div
           initial={{ y: 0 }}
           animate={{ y: [-10, 10, -10] }}
           transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
           className="absolute top-[30%] left-[15%] w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 opacity-60"
         />
-        <motion.div 
+        <motion.div
           initial={{ y: 0 }}
           animate={{ y: [10, -10, 10] }}
           transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
           className="absolute top-[25%] right-[20%] w-6 h-6 rounded-full bg-gradient-to-r from-indigo-400 to-purple-500 opacity-60"
         />
-        <motion.div 
+        <motion.div
           initial={{ y: 0 }}
           animate={{ y: [-15, 15, -15] }}
           transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
           className="absolute top-[60%] right-[25%] w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-indigo-600 opacity-60"
         />
       </div>
-      
+
       {/* Decorative patterns - added coin-like circles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 0.2, scale: 1 }}
           transition={{ duration: 1.5 }}
           className="absolute bottom-20 left-[10%] w-24 h-24 rounded-full border-4 border-[#4552e3]/20"
         />
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 0.15, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.3 }}
           className="absolute top-[30%] right-[15%] w-16 h-16 rounded-full border-2 border-[#4552e3]/30"
         />
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 0.1, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.6 }}
           className="absolute top-40 left-[20%] w-32 h-32 rounded-full border-8 border-[#4552e3]/10"
         />
       </div>
-      
+
       {/* Left indicator line */}
       <div className="absolute inset-y-0 left-0 h-full w-px bg-[#888feb]/20">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 200 }}
           transition={{ duration: 1.5, delay: 0.2 }}
-          className="absolute top-32 h-40 w-px bg-gradient-to-b from-transparent via-[#4552e3] to-transparent" 
+          className="absolute top-32 h-40 w-px bg-gradient-to-b from-transparent via-[#4552e3] to-transparent"
         />
       </div>
-      
+
       {/* Right indicator line */}
       <div className="absolute inset-y-0 right-0 h-full w-px bg-[#888feb]/20">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 200 }}
           transition={{ duration: 1.5, delay: 0.4 }}
-          className="absolute top-64 h-40 w-px bg-gradient-to-b from-transparent via-[#4552e3] to-transparent" 
+          className="absolute top-64 h-40 w-px bg-gradient-to-b from-transparent via-[#4552e3] to-transparent"
         />
       </div>
-      
+
       {/* Main content wrapper */}
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         {/* Centered RupeeFi title with huge font */}
@@ -124,14 +123,14 @@ export default function Herosection() {
           className="text-center mb-12"
         >
           {/* Sparkle decorations */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.8 }}
             className="absolute top-0 left-[30%] transform -translate-x-1/2"
           >
           </motion.div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
@@ -171,7 +170,7 @@ export default function Herosection() {
         </motion.div>
 
         {/* Custom Rupee Display with wave-like size variations */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
@@ -179,162 +178,162 @@ export default function Herosection() {
         >
           <div className="flex flex-row items-center justify-center gap-[1px] sm:gap-2 overflow-x-auto scrollbar-hide pb-4 px-2 snap-x snap-mandatory">
             {/* High to low */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 1.1 }}
               className="flex-shrink-0 p-1 overflow-visible snap-center"
             >
-              <motion.img 
+              <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.1 }}
-                className="h-[85px] sm:h-[180px] md:h-[220px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center" 
-                src={twoRupee} 
-                alt="₹2 Coin" 
+                className="h-[85px] sm:h-[180px] md:h-[220px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center"
+                src={twoRupee}
+                alt="₹2 Coin"
               />
             </motion.div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 1.2 }}
               className="flex-shrink-0 p-1 overflow-visible snap-center"
             >
-              <motion.img 
+              <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.2 }}
-                className="h-[75px] sm:h-[160px] md:h-[200px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center" 
-                src={fiveRupee} 
-                alt="₹5 Coin" 
+                className="h-[75px] sm:h-[160px] md:h-[200px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center"
+                src={fiveRupee}
+                alt="₹5 Coin"
               />
             </motion.div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 1.3 }}
               className="flex-shrink-0 p-1 overflow-visible snap-center"
             >
-              <motion.img 
+              <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.3 }}
-                className="h-[65px] sm:h-[140px] md:h-[180px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center" 
-                src={tenRupee} 
-                alt="₹10 Coin" 
+                className="h-[65px] sm:h-[140px] md:h-[180px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center"
+                src={tenRupee}
+                alt="₹10 Coin"
               />
             </motion.div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 1.4 }}
               className="flex-shrink-0 p-1 overflow-visible snap-center"
             >
-              <motion.img 
+              <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.4 }}
-                className="h-[55px] sm:h-[120px] md:h-[160px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center" 
-                src={twentyRupee} 
-                alt="₹20 Note" 
+                className="h-[55px] sm:h-[120px] md:h-[160px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center"
+                src={twentyRupee}
+                alt="₹20 Note"
               />
             </motion.div>
-            
+
             {/* Smallest elements (stacked) */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 1.5 }}
               className="flex-shrink-0 flex flex-col items-center justify-center p-1 overflow-visible snap-center"
             >
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.5 }}
                 className="transform transition-transform duration-300 hover:scale-110 origin-center"
               >
-                <motion.img 
+                <motion.img
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 1.55 }}
-                  className="h-[30px] sm:h-[60px] md:h-[80px] object-contain mb-1" 
-                  src={OneCoin} 
-                  alt="₹1 Coin" 
+                  className="h-[30px] sm:h-[60px] md:h-[80px] object-contain mb-1"
+                  src={OneCoin}
+                  alt="₹1 Coin"
                 />
-                <motion.img 
+                <motion.img
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 1.6 }}
-                  className="h-[30px] sm:h-[60px] md:h-[80px] object-contain mt-1" 
-                  src={fiftyPaisa} 
-                  alt="50 Paise Coin" 
+                  className="h-[30px] sm:h-[60px] md:h-[80px] object-contain mt-1"
+                  src={fiftyPaisa}
+                  alt="50 Paise Coin"
                 />
               </motion.div>
             </motion.div>
-            
+
             {/* Low to high */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 1.6 }}
               className="flex-shrink-0 p-1 overflow-visible snap-center"
             >
-              <motion.img 
+              <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.65 }}
-                className="h-[55px] sm:h-[120px] md:h-[160px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center" 
-                src={fiftyRupee} 
-                alt="₹50 Note" 
+                className="h-[55px] sm:h-[120px] md:h-[160px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center"
+                src={fiftyRupee}
+                alt="₹50 Note"
               />
             </motion.div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 1.7 }}
               className="flex-shrink-0 p-1 overflow-visible snap-center"
             >
-              <motion.img 
+              <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.75 }}
-                className="h-[65px] sm:h-[140px] md:h-[180px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center" 
-                src={hundredRupee} 
-                alt="₹100 Note" 
+                className="h-[65px] sm:h-[140px] md:h-[180px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center"
+                src={hundredRupee}
+                alt="₹100 Note"
               />
             </motion.div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 1.8 }}
               className="flex-shrink-0 p-1 overflow-visible snap-center"
             >
-              <motion.img 
+              <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.85 }}
-                className="h-[75px] sm:h-[160px] md:h-[200px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center" 
-                src={twoHundredRupee} 
-                alt="₹200 Note" 
+                className="h-[75px] sm:h-[160px] md:h-[200px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center"
+                src={twoHundredRupee}
+                alt="₹200 Note"
               />
             </motion.div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 1.9 }}
               className="flex-shrink-0 p-1 overflow-visible snap-center"
             >
-              <motion.img 
+              <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.95 }}
-                className="h-[85px] sm:h-[180px] md:h-[220px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center" 
-                src={fiveHundredRupee} 
-                alt="₹500 Note" 
+                className="h-[85px] sm:h-[180px] md:h-[220px] object-contain transform transition-transform duration-300 hover:scale-110 origin-center"
+                src={fiveHundredRupee}
+                alt="₹500 Note"
               />
             </motion.div>
           </div>
-          
+
           <style jsx>{`
             .scrollbar-hide::-webkit-scrollbar {
               display: none;
@@ -344,7 +343,7 @@ export default function Herosection() {
               scrollbar-width: none;
             }
           `}</style>
-          
+
           {/* Mobile scroll indicator */}
           <div className="mt-2 flex justify-center md:hidden">
             <div className="w-12 h-1 rounded-full bg-[#4552e3]/20"></div>
@@ -362,10 +361,10 @@ export default function Herosection() {
             Get Started
             <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
-          
-          <Link to="/blog" className="group flex items-center justify-center w-64 transform rounded-full bg-white px-6 py-3 font-medium text-[#4552e3] border-2 border-[#4552e3]/20 transition-all duration-300 hover:border-[#4552e3] hover:shadow-lg hover:shadow-[#4552e3]/10 hover:-translate-y-1">
-  Learn More
-</Link>
+
+          <Link to="/about" className="group flex items-center justify-center w-64 transform rounded-full bg-white px-6 py-3 font-medium text-[#4552e3] border-2 border-[#4552e3]/20 transition-all duration-300 hover:border-[#4552e3] hover:shadow-lg hover:shadow-[#4552e3]/10 hover:-translate-y-1">
+            Learn More
+          </Link>
 
         </motion.div>
 
@@ -382,7 +381,7 @@ export default function Herosection() {
             { icon: <Shield className="text-[#4552e3]" />, title: "Security", description: "Advanced protection for your financial data" },
             { icon: <CreditCard className="text-[#4552e3]" />, title: "Credit Tools", description: "Build and optimize your credit score" },
           ].map((feature, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -413,12 +412,12 @@ export default function Herosection() {
                   Digital Rupee (e₹) - India's CBDC
                 </h2>
               </div>
-              
+
               <div className="space-y-4">
                 <p className="text-gray-600">
                   The Digital Rupee (e₹) is India's Central Bank Digital Currency (CBDC), launched by the Reserve Bank of India. It represents a direct liability of the RBI and serves as a digital version of physical cash.
                 </p>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 bg-white rounded-xl border border-[#888feb]/20 hover:border-[#4552e3]/30 transition-all duration-300">
                     <h3 className="text-lg font-semibold text-[#0d1152] mb-2">Retail e₹</h3>
@@ -426,7 +425,7 @@ export default function Herosection() {
                       Designed for everyday transactions by individuals and businesses, offering the same experience as physical cash but in digital form.
                     </p>
                   </div>
-                  
+
                   <div className="p-4 bg-white rounded-xl border border-[#888feb]/20 hover:border-[#4552e3]/30 transition-all duration-300">
                     <h3 className="text-lg font-semibold text-[#0d1152] mb-2">Wholesale e₹</h3>
                     <p className="text-sm text-gray-600">
@@ -442,7 +441,7 @@ export default function Herosection() {
               <h3 className="text-xl font-semibold text-[#0d1152] mb-6">
                 Benefits of Digital Rupee
               </h3>
-              
+
               <div className="space-y-4">
                 {[
                   {
@@ -478,8 +477,8 @@ export default function Herosection() {
                 ))}
               </div>
 
-              <Link 
-                to="/learn-more" 
+              <Link
+                to="/learn-more"
                 className="mt-6 inline-flex items-center text-[#4552e3] hover:text-[#15229c] transition-colors duration-300"
               >
                 Learn more about Digital Rupee
